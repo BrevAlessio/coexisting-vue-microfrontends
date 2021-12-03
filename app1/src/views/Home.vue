@@ -15,6 +15,12 @@ export default {
   name: 'home',
   components: {
     HelloWorld
-  }
+  },
+  beforeRouteEnter() {
+    console.log('APP1 ROUTE ENTER')
+  },
+  beforeRouteLeave() {
+    console.log('APP1 ROUTE LEAVE')
+  },
 }
 </script>
